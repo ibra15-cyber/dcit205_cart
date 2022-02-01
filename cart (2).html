@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cart</title>
+	<style type="text/css">
+		.cart a{
+			background-color: royalblue;
+			color: #fff;
+			cursor: pointer;
+			text-decoration: none;
+		}
+		li a {
+			padding: 5px;
+			background-color: #ffff;
+			text-decoration: none;
+		}
+
+		nav li span {
+			padding-left: 5px;
+		}
+
+		.container{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+
+		.image{
+			margin-right: 20px;
+			margin-left: 20px;
+			position: relative;
+			overflow: hidden;
+		}
+		img, .cart-cart{
+			width: 25%;
+		}
+
+		.add-cart{
+			position:absolute;
+			background-color:darkgrey;
+			transition: all 0.3s ease-in-out;
+			opacity: 0;
+			cursor: pointer;
+			text-align: center;
+		}
+		.image:hover .cart1,
+		.image:hover .cart2,
+		.image:hover .cart3,
+		.image:hover .cart4, 
+		.image:hover .cart5{
+			bottom: 50px;
+			opacity: 1;
+			padding:10px;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="cart"><a href="cart.html"><ion-icon name="cart"></ion-icon>Cart<span>0</span></a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="image">
+			<img src="C:\Users\dell\Desktop\Capture.PNG" alt="">
+			<h3>adidas1</h3>
+			<h3>Ghs 33.00 </h3>
+			<a class="add-cart cart1" href="#">Add Cart</a>
+		</div>
+		<div class="image">
+			<img src="C:\Users\dell\Desktop\Capture.PNG" alt="">
+			<h3>adidas2</h3>
+			<h3>Ghs 343.00 </h3>
+			<a class="add-cart cart2" href="#">Add Cart</a>
+		</div>
+		<div class="image">
+			<img src="C:\Users\dell\Desktop\Capture.PNG" alt="">
+			<h3>adidas3</h3>
+			<h3>Ghs 4343.00 </h3>
+			<a class="add-cart cart3" href="#">Add Cart</a>
+		</div>
+		<div class="image">
+			<img src="C:\Users\dell\Desktop\Capture.PNG" alt="">
+			<h3>nike1</h3>
+			<h3>Ghs 33.00 </h3>
+			<a class="add-cart cart4" href="#">Add Cart</a>
+		</div>
+		<div class="image">
+			<img src="C:\Users\dell\Desktop\Capture.PNG" alt="">
+			<h3>nike2</h3>
+			<h3>Ghs 33.00 </h3>
+			<a class="add-cart cart5" href="#">Add Cart</a>
+		</div>	
+	</div>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js">
+	<script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
+
+</body>
+
+</html>
